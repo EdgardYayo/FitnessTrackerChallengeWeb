@@ -46,6 +46,13 @@ const challenges = [
     } else if (completedChallenges === 15 && !badgesEarned.includes("Fitness Master")){
       badgesEarned.push("Fitness Master");
       displayBadge("Fitness Master");
+    } else if (completedChallenges === 30 && !badgesEarned.includes("Fitness God")){
+      badgesEarned.push("Fitness God");
+      displayBadge("Fitness God");
+    } else if (completedChallenges === 48 && !badgesEarned.includes("Are you out of your mind? 😵")){
+        badgesEarned.push("Are you out of your mind? 😵");
+        displayBadge("Are you out of your mind? 😵");
+        alert("Congratulations you have completed all the challenges 🎊")
     }
     
     
