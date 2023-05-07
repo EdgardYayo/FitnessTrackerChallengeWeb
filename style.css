@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #c4c1e0;
+  }
+  
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #challenge, #progress, #badges, #leaderboard {
+    background-color: #ffe9e3;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50%, 1fr));
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  button {
+    background-color: #7c73e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #c4c1e0;
+    color: #7c73e6;
+  }
+
+  
+  .imgChallengeContainer > img,
+  .imgProgressContainer > img {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    box-shadow: 0 10px 20px -5px #7c73e6;
+    border-radius: 10px;
+  }
+
+  .imgChallengeContainer,
+  .imgProgressContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+  @media(max-width: 900px) {
+    .imgChallengeContainer,
+    .imgProgressContainer {
+        flex-wrap: wrap;
+    }
+  }

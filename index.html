@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daily Fitness Challenges</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Daily Fitness Challenges</h1>
+  </header>
+  
+  <div id="challenge">
+    <aside>
+        <h2>Today's Challenge</h2>
+        <p id="challenge-description"></p>
+        <button onclick="completeChallenge()">Complete Challenge</button>
+        <button onclick="updateLeaderBoard()">End Challenge</button>
+    </aside>
+    <aside class="imgChallengeContainer">
+        <img src="./images/walking-g3f6287a28_640.jpg" alt="walking">
+        <img src="./images/yoga-g732a25a9b_640.jpg" alt="yoga">
+    </aside>
+</div>
+
+<div id="progress">
+    <aside>
+        <h2>Your Progress</h2>
+        <p id="completed-challenges">Completed Challenges: <span id="completed-count">0</span></p>
+    </aside>
+    <aside class="imgProgressContainer">
+        <img src="./images/woman-gd59c92cd4_640.jpg" alt="abs">
+        <img src="./images/man-g8a04c4eca_640.jpg" alt="pushup">
+    </aside>
+  </div>
+
+  <div id="badges">
+    <h2>Badges</h2>
+    <ul id="badge-list">
+      <!-- Badge items will be dynamically added here -->
+    </ul>
+  </div>
+  
+  <div id="leaderboard">
+    <h2>Leaderboard</h2>
+    <ol id="leaderboard-list">
+      <!-- Leaderboard items will be dynamically added here -->
+    </ol>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
